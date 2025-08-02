@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  width: 54px;
+  height: 25px;
+  align-items: center;
+  background-color: #2F80ED;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  gap: 5px;
+}
+
+.button:hover {
+  background-color: #357ae8;
+}
+
+.button span {
+  width: 26px;
+  height: 16.3px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.icon {
+  width: 7px;
+  height: 4.57px;
+}

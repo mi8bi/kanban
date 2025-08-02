@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  position: relative;
+}
+
+.notificationIcon {
+  width: 13px;
+  height: 13px;
+}
+
+.ellipseIcon {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 5px;
+  height: 5px;
+  color: #E83882;
+  border-radius: 50%;
+}
