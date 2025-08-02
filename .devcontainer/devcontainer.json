@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+  "name": "Node.js",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+  "workspaceFolder": "/${localWorkspaceFolderBasename}",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+    "ghcr.io/braun-daniel/devcontainer-features/fzf:1": {}
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// This can be used to network with other containers or with the host.
+  "forwardPorts": [5173],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint", // ESLint
+        "editorconfig.editorconfig", // Editor Config
+        "xabikos.javascriptsnippets", // Javascript Snippets
+        "esbenp.prettier-vscode", // Prettier
+        "streetsidesoftware.code-spell-checker", // Spell Checker
+        "wayou.vscode-todo-highlight", // Todo Highlight
+        "stylelint.vscode-stylelint", // CSS Style Lint
+        "donjayamanne.githistory", // Git History
+        "mhutchie.git-graph" // Git Graph
+        "clinyong.vscode-css-modules", // CSS Modules
+      ]
+    }
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+  }
+}

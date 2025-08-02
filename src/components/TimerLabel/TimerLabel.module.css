@@ -1,0 +1,17 @@
+.timerLabel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #152766;
+}
+
+.timerIcon {
+  height: 13px;
+  width: 11.11px;
+}
+
+.timerText {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 12px;
+}
