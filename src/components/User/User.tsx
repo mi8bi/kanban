@@ -7,7 +7,7 @@ type UserProps = {
 
 export const User: React.FC<UserProps> = ({ username }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <span className={styles.username}>{username}</span>
     </div>
   )

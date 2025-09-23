@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { Header } from "../../../layouts/Header/Header";
+import styles from "./Header.stories.module.css";
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 
 const meta = {
@@ -8,7 +9,7 @@ const meta = {
   component: Header,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "centered",
+    // layout: "centered",
     docs: {
       description: {
         component: "Header",
@@ -27,4 +28,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {};
+export const FullWidth: Story = {
+  render: () => (
+    <div className={styles.wrapperFull}>
+      <Header />
+    </div>
+  ),
+};
